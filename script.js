@@ -11,7 +11,7 @@ async function selectMediaStream() {
             videoElement.play();
         }
     } catch (err) {
-        alert('Whoops, something wrong with calling the API, try again!');
+        alert('Whoops, something wrong with calling the API, or you have just cancel it, try again!');
     }
     console.log('In the end of selectMediaStream');
 }

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+html {
+    box-sizing: border-box; /*preventing the adding extra padding*/
+} 
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    height: 100vh; /*view height*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #504d53;
+    font-size: 2rem; 
+}
+
+.button-container {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7); /*3D setup:  horizontal-offset vertical-offset blur spread color*/ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 120px;
+    height: 75px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 2px 5px black;
+    background: linear-gradient(to top, #696969, #575757); /*bottom to top*/
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #696969, #575757); /*top to bottom*/ 
+}
+
+button:active {
+    transform: translateY(3px); /*translate down to 3px*/
+    box-shadow: inset 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Using for Tablet or Smaller*/
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+        width: auto;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+}
